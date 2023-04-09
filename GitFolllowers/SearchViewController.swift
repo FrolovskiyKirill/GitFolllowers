@@ -19,12 +19,21 @@ final class SearchViewController: UIViewController {
     configureLogoImageView()
     configureTextField()
     configureCallToActionButton()
+    createDismissKeyboardTapGesture()
+//    textFieldShouldReturn(userNameTextField)
   }
 
   override func viewWillAppear(_ animated: Bool) {
     super.viewWillAppear(animated)
     navigationController?.isNavigationBarHidden = true
     tabBarController?.tabBar.isHidden = false
+  }
+  ///```
+  ///Функция скрывает клавиатуру по любому тапу по экрану.
+  ///```
+  private func createDismissKeyboardTapGesture() {
+    let tap = UITapGestureRecognizer(target: self.view, action: #selector(UIView.endEditing(_:)))
+    view.addGestureRecognizer(tap)
   }
 
   ///```
@@ -48,6 +57,7 @@ final class SearchViewController: UIViewController {
   ///```
   private func configureTextField() {
     view.addSubview(userNameTextField)
+    userNameTextField.delegate = self
 
     NSLayoutConstraint.activate([
       userNameTextField.topAnchor.constraint(equalTo: logoImageView.bottomAnchor, constant: 48),
@@ -72,5 +82,16 @@ final class SearchViewController: UIViewController {
       callToActionButton.heightAnchor.constraint(equalToConstant: 50)
     ])
   }
+}
 
+extension SearchViewController: UITextFieldDelegate {
+
+  ///```
+  ///Функция, которая выполняет определенное действие
+  ///при нажатии на return на клавиатуре.
+  ///```
+  func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+    print("Did Tap Return")
+    return true
+  }
 }
