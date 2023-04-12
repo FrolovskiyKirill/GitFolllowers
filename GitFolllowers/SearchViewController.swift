@@ -48,6 +48,7 @@ final class SearchViewController: UIViewController {
     //Если пустая строка, то не переходит на следующий экран.
     guard isUsernameEntered else {
       print("no username")
+      presentGFAlertOnTheMainThread(title: "Empty Username", message: "Please enter a username. We need to know who to look for 😀.", buttonTitle: "Ok")
       return
       }
 

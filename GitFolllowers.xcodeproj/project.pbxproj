@@ -17,6 +17,10 @@
 		ED49FB1C29E2E1FA002FB9E6 /* GFButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED49FB1B29E2E1FA002FB9E6 /* GFButton.swift */; };
 		ED49FB1E29E2E93B002FB9E6 /* GFTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED49FB1D29E2E93B002FB9E6 /* GFTextField.swift */; };
 		ED49FB2029E322C0002FB9E6 /* FollowerListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED49FB1F29E322C0002FB9E6 /* FollowerListViewController.swift */; };
+		ED49FB2229E5CFDA002FB9E6 /* GFTitleLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED49FB2129E5CFDA002FB9E6 /* GFTitleLabel.swift */; };
+		ED49FB2429E5D32D002FB9E6 /* GFBodyLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED49FB2329E5D32D002FB9E6 /* GFBodyLabel.swift */; };
+		ED49FB2629E5D4FD002FB9E6 /* GFAlertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED49FB2529E5D4FD002FB9E6 /* GFAlertViewController.swift */; };
+		ED49FB2829E713C0002FB9E6 /* UIViewController+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED49FB2729E713C0002FB9E6 /* UIViewController+Ext.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +36,10 @@
 		ED49FB1B29E2E1FA002FB9E6 /* GFButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFButton.swift; sourceTree = "<group>"; };
 		ED49FB1D29E2E93B002FB9E6 /* GFTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFTextField.swift; sourceTree = "<group>"; };
 		ED49FB1F29E322C0002FB9E6 /* FollowerListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowerListViewController.swift; sourceTree = "<group>"; };
+		ED49FB2129E5CFDA002FB9E6 /* GFTitleLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFTitleLabel.swift; sourceTree = "<group>"; };
+		ED49FB2329E5D32D002FB9E6 /* GFBodyLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFBodyLabel.swift; sourceTree = "<group>"; };
+		ED49FB2529E5D4FD002FB9E6 /* GFAlertViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFAlertViewController.swift; sourceTree = "<group>"; };
+		ED49FB2729E713C0002FB9E6 /* UIViewController+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Ext.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,9 +76,13 @@
 				ED49FB0229E2C6E2002FB9E6 /* SceneDelegate.swift */,
 				ED49FB1729E2D458002FB9E6 /* SearchViewController.swift */,
 				ED49FB1929E2D4B5002FB9E6 /* FavoritesListViewController.swift */,
+				ED49FB1F29E322C0002FB9E6 /* FollowerListViewController.swift */,
+				ED49FB2529E5D4FD002FB9E6 /* GFAlertViewController.swift */,
 				ED49FB1B29E2E1FA002FB9E6 /* GFButton.swift */,
 				ED49FB1D29E2E93B002FB9E6 /* GFTextField.swift */,
-				ED49FB1F29E322C0002FB9E6 /* FollowerListViewController.swift */,
+				ED49FB2129E5CFDA002FB9E6 /* GFTitleLabel.swift */,
+				ED49FB2329E5D32D002FB9E6 /* GFBodyLabel.swift */,
+				ED49FB2729E713C0002FB9E6 /* UIViewController+Ext.swift */,
 				ED49FB0E29E2C6E3002FB9E6 /* LaunchScreen.storyboard */,
 				ED49FB0C29E2C6E3002FB9E6 /* Assets.xcassets */,
 				ED49FB1129E2C6E3002FB9E6 /* Info.plist */,
@@ -151,12 +163,16 @@
 			files = (
 				ED49FB2029E322C0002FB9E6 /* FollowerListViewController.swift in Sources */,
 				ED49FB1A29E2D4B5002FB9E6 /* FavoritesListViewController.swift in Sources */,
+				ED49FB2829E713C0002FB9E6 /* UIViewController+Ext.swift in Sources */,
 				ED49FB0129E2C6E2002FB9E6 /* AppDelegate.swift in Sources */,
 				ED49FB1C29E2E1FA002FB9E6 /* GFButton.swift in Sources */,
 				ED49FB0329E2C6E2002FB9E6 /* SceneDelegate.swift in Sources */,
+				ED49FB2629E5D4FD002FB9E6 /* GFAlertViewController.swift in Sources */,
 				ED49FB1829E2D458002FB9E6 /* SearchViewController.swift in Sources */,
+				ED49FB2229E5CFDA002FB9E6 /* GFTitleLabel.swift in Sources */,
 				ED49FB0B29E2C6E2002FB9E6 /* GitFolllowers.xcdatamodeld in Sources */,
 				ED49FB1E29E2E93B002FB9E6 /* GFTextField.swift in Sources */,
+				ED49FB2429E5D32D002FB9E6 /* GFBodyLabel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
