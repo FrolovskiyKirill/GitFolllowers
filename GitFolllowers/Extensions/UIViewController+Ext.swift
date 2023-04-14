@@ -8,7 +8,10 @@
 import UIKit
 
 extension UIViewController {
-
+  
+  ///```
+  ///Метод для вызова кастомного алерта на экране в главном потоке
+  ///```
   func presentGFAlertOnTheMainThread(title: String, message: String, buttonTitle: String) {
     DispatchQueue.main.async {
       let alertViewController = GFAlertViewController(alertTitle: title, message: message, buttonTitle: buttonTitle)
@@ -16,6 +19,5 @@ extension UIViewController {
       alertViewController.modalTransitionStyle = .crossDissolve
       self.present(alertViewController, animated: true)
     }
-
   }
 }
